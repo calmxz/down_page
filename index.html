@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Temporarily Unavailable</title>
+    <title>Page down</title>
     <style>
         * {
             margin: 0;
@@ -26,43 +26,44 @@
             width: 100%;
             text-align: center;
             margin: 0 auto;
-            padding: 3.5rem 2rem 2.5rem 2rem;
+            padding: 1.5rem;
         }
 
         .dost-logo {
             display: block;
-            margin: 0 auto 1.2rem auto;
+            margin: 0 auto 1.5rem auto;
             width: 120px;
             height: auto;
         }
 
         .illustration {
-            margin: 0 auto 3rem auto;
+            margin: 0 auto 1.5rem auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 180px;
+            height: 100px;
         }
 
         .title {
             font-size: 2rem;
             font-weight: 700;
             color: #1a202c;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             letter-spacing: -0.5px;
         }
 
         .subtitle {
             color: #374151;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
             font-size: 1.05rem;
             font-weight: 500;
+            line-height: 1.6;
         }
 
         .description {
             color: #374151;
             line-height: 1.7;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             font-size: 1rem;
             font-weight: 400;
         }
@@ -71,12 +72,13 @@
             color: #9ca3af;
             font-size: 0.98rem;
             font-weight: 400;
-            margin-top: 3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .settings-icon {
-            width: 64px;
-            height: 64px;
+            width: 80px;
+            height: 80px;
             color: #3b82f6;
             animation: spin 3s linear infinite;
         }
@@ -85,11 +87,72 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
+        .contact-info {
+            color: #374151;
+            font-size: 1rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+            word-break: break-all;
+            font-weight: 500;
+            transition: color 0.2s;
+            padding: 0 0.15em;
+            border-radius: 3px;
+        }
+        .contact-info a:hover, .contact-info a:focus {
+            color: #1d4ed8;
+            background: #f1f5f9;
+            outline: none;
+        }
+        .contact-info .icon {
+            vertical-align: middle;
+            margin-right: 0.25em;
+            width: 1.1em;
+            height: 1.1em;
+            stroke-width: 2.2;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 0;
+        }
+        .social-icon {
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-icon:hover {
+            transform: translateY(-2px);
+        }
+        .social-icon svg {
+            display: block;
+            transition: all 0.2s ease;
+        }
+        .social-icon:hover svg {
+            color: #2563eb;
+        }
+        .social-icon:hover svg[fill] {
+            fill: #2563eb;
+        }
+        .social-icon:hover svg[stroke] {
+            stroke: #2563eb;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="dost-logo-new.png" alt="DOST Logo" class="dost-logo" />
+        
+
+        
         <h1 class="title">We'll be back soon</h1>
         
         <p class="subtitle">
@@ -97,11 +160,26 @@
         </p>
         
         <p class="description">
-            Our technical team is working to restore full service as quickly as possible. For urgent matters, please contact your local government office or visit our physical location during regular business hours.
+            Our technical team is working to restore full service as quickly as possible. For urgent matters, You may contact us at (072) 888-3399 or email us at mail@region1.dost.gov.ph.
         </p>
         
         <div class="thank-you">
             Thank you for your patience and understanding
+        </div>
+        
+        <div class="social-links">
+            <a href="https://region1.dost.gov.ph/" class="social-icon" title="Official Website" target="_blank" rel="noopener">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    <path d="M2 12h20"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/dostro1" class="social-icon" title="Facebook Page" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
         </div>
     </div>
 </body>
